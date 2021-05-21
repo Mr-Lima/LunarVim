@@ -1,14 +1,14 @@
 O = {
     auto_close_tree = 0,
     auto_complete = true,
-    colorscheme = 'lunar',
+    colorscheme = 'dracula',
     hidden_files = true,
     wrap_lines = false,
     number = true,
     relative_number = true,
     shell = 'bash',
 	timeoutlen = 100,
-    nvim_tree_disable_netrw = 0, -- "1 by default, disables netrw (must be set before plugin's packadd)
+    nvim_tree_disable_netrw = 1, -- "1 by default, disables netrw (must be set before plugin's packadd)
 
     -- @usage pass a table with your desired languages
     treesitter = {
@@ -64,6 +64,12 @@ O = {
 		diagnostics = {virtualtext = {spacing = 0, prefix = ""}, signs = true, underline = true},
 		filetypes = {'rb', 'erb', 'rakefile'}
 	},
+    clojure = {
+        diagnostics = {virtual_text = true, signs = true, underline = true},
+        filetypes = {'clojure'}
+    },
+    -- css = {formatter = '', autoformat = false, virtual_text = true},
+    -- json = {formatter = '', autoformat = false, virtual_text = true},
     -- css = {formatter = '', autoformat = false, virtual_text = true},
     -- json = {formatter = '', autoformat = false, virtual_text = true}
 

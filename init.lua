@@ -24,6 +24,7 @@ vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
 
 -- LSP
 require('lsp')
+require('lsp.clojure-ls')
 require('lsp.angular-ls')
 require('lsp.bash-ls')
 require('lsp.clangd')

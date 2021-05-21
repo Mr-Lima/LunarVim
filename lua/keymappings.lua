@@ -1,3 +1,12 @@
+vim.api.nvim_set_keymap('n', '<Space>', '<NOP>', {noremap = true, silent = true})
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ','
+
+-- no hl
+vim.api.nvim_set_keymap('n', '<Leader>h', ':set hlsearch!<CR>', {noremap = true, silent = true})
+
+-- explorer
+vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '-', ':RnvimrToggle<CR>', {noremap = true, silent = true})
 
 -- better window movement
@@ -28,8 +37,8 @@ vim.api.nvim_set_keymap('n', '<C-Left>', ':vertical resize -2<CR>', {silent = tr
 vim.api.nvim_set_keymap('n', '<C-Right>', ':vertical resize +2<CR>', {silent = true})
 
 -- better indenting
-vim.api.nvim_set_keymap('v', '<', '<gv', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('v', '>', '>gv', {noremap = true, silent = true})
+--vim.api.nvim_set_keymap('v', '<', '<gv', {noremap = true, silent = true})
+--vim.api.nvim_set_keymap('v', '>', '>gv', {noremap = true, silent = true})
 
 -- I hate escape
 vim.api.nvim_set_keymap('i', 'jk', '<ESC>', {noremap = true, silent = true})

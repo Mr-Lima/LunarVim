@@ -20,8 +20,9 @@ vim.o.splitright = true -- Vertical splits will automatically be to the right
 vim.o.t_Co = "256" -- Support 256 colors
 vim.o.conceallevel = 0 -- So that I can see `` in markdown files
 vim.cmd('set ts=4') -- Insert 2 spaces for a tab
-vim.cmd('set sw=4') -- Change the number of space characters inserted for indentation
-vim.cmd('set expandtab') -- Converts tabs to spaces
+vim.cmd('set sw=2') -- Change the number of space characters inserted for indentation
+vim.cmd('set expandtab')
+vim.bo.expandtab = true -- Converts tabs to spaces
 vim.bo.smartindent = true -- Makes indenting smart
 vim.wo.number = O.number -- set numbered lines
 vim.wo.relativenumber = O.relative_number -- set relative number
@@ -38,6 +39,6 @@ vim.g.nvim_tree_disable_netrw = O.nvim_tree_disable_netrw
 -- vim.o.guifont = "JetBrainsMono\\ Nerd\\ Font\\ Mono:h18"
 -- vim.o.guifont = "Hack\\ Nerd\\ Font\\ Mono"
 -- vim.o.guifont = "SauceCodePro Nerd Font:h17"
-vim.o.guifont = "FiraCode Nerd Font:h17"
+vim.o.guifont = "FiraCode\\ Nerd\\ Font\\ Medium:h13"
 
 -- vim.o.guifont = "JetBrains\\ Mono\\ Regular\\ Nerd\\ Font\\ Complete"
