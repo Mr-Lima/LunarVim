@@ -1,3 +1,4 @@
+vim.g.maplocalleader = ','
 vim.api.nvim_set_keymap('n', '-', ':RnvimrToggle<CR>', {noremap = true, silent = true})
 
 -- better window movement

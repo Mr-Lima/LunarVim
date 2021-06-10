@@ -70,6 +70,10 @@ O = {
 		filetypes = {'rb', 'erb', 'rakefile'}
 	},
     go = {},
+    clojure = {
+        diagnostics = {virtual_text = true, signs = true, underline = true},
+        filetypes = {'clojure'}
+    },
     -- css = {formatter = '', autoformat = false, virtual_text = true},
     -- json = {formatter = '', autoformat = false, virtual_text = true}
 

@@ -86,6 +86,14 @@ return require("packer").startup(function(use)
     use {"glepnir/galaxyline.nvim", opt = true}
     use {"romgrk/barbar.nvim", opt = true}
 
+    -- clojure
+    use {"Olical/conjure",tag = 'v4.18.0', opt = true, ft = {'clojure'}}
+    use {"tpope/vim-dispatch", opt = true, ft = {'clojure'}}
+    use {"clojure-vim/vim-jack-in", opt = true, ft = {'clojure'}}
+    use {"radenling/vim-dispatch-neovim", opt = true, ft = {'clojure'}}
+    use {"guns/vim-sexp", opt = true, ft = {'clojure'}}
+    use {"tpope/vim-sexp-mappings-for-regular-people", opt = true, ft = {'clojure'}}
+
     -- Zen Mode
     use {"Pocco81/TrueZen.nvim", opt = true}
 
@@ -119,6 +127,12 @@ return require("packer").startup(function(use)
     require_plugin('lsp-rooter.nvim')
     require_plugin("TrueZen.nvim")
     require_plugin("nvim-ts-context-commentstring")
+    require_plugin("vim-dispatch")
+    require_plugin("vim-jack-in")
+    require_plugin("vim-dispatch-neovim")
+    require_plugin("conjure")
+    require_plugin("vim-sexp")
+    require_plugin("vim-sexp-mappings-for-regular-people")
 
     -- Extras
     if O.extras then
