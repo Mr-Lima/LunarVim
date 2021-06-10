@@ -79,6 +79,9 @@ return require("packer").startup(function(use)
 
     -- Color
     use {"christianchiarulli/nvcode-color-schemes.vim", opt = true}
+    use {"folke/tokyonight.nvim", opt = true}
+    use {"sainnhe/edge", opt = true}
+    use {"novakne/kosmikoa.nvim", opt = true}
 
     -- Icons
     use {"kyazdani42/nvim-web-devicons", opt = true}
@@ -123,6 +126,9 @@ return require("packer").startup(function(use)
     require_plugin("nvim-comment")
     require_plugin("nvim-bqf")
     require_plugin("nvcode-color-schemes.vim")
+    require_plugin("tokyonight.nvim")
+    require_plugin("edge")
+    require_plugin("kosmikoa.nvim")
     require_plugin("nvim-web-devicons")
     require_plugin("galaxyline.nvim")
     require_plugin("barbar.nvim")
@@ -164,6 +170,8 @@ return require("packer").startup(function(use)
         -- gennaro-tedesco/nvim-jqx
         -- TimUntersberger/neogit
         -- folke/lsp-colors.nvim
+        use {'folke/lsp-colors.nvim', opt = true}
+        require_plugin('lsp-colors.nvim')
         -- simrat39/symbols-outline.nvim
 
         -- Git
