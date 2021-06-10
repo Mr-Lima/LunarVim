@@ -68,6 +68,7 @@ return require("packer").startup(function(use)
     -- use {'lukas-reineke/indent-blankline.nvim', opt=true, branch = 'lua'}
     use {"lewis6991/gitsigns.nvim", opt = true}
     use {'f-person/git-blame.nvim', opt = true}
+    use {'kdheepak/lazygit.nvim', opt = true}
     use {"folke/which-key.nvim", opt = true}
     use {"ChristianChiarulli/dashboard-nvim", opt = true}
     use {"windwp/nvim-autopairs", opt = true}
@@ -120,6 +121,7 @@ return require("packer").startup(function(use)
     require_plugin("nvim-tree.lua")
     require_plugin("gitsigns.nvim")
     require_plugin("git-blame.nvim")
+    require_plugin("lazygit.nvim")
     require_plugin("which-key.nvim")
     require_plugin("dashboard-nvim")
     require_plugin("nvim-autopairs")

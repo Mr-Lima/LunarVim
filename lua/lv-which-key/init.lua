@@ -99,7 +99,7 @@ local mappings = {
         s = {"<Plug>VimspectorStop<cr>", "Stop"},
         a = {"<Plug>VimpectorRestart<cr>", "Restart"},
         u = {"<Plug>VimspectorRunToCursor<cr>", "Run to Cursor"},
-        q = {"<Plug>VimspectorReset<cr>", "Quit"}
+        q = {"<cmd>VimspectorReset<cr>", "Quit"}
     },
     g = {
         name = "+Git",
@@ -114,6 +114,7 @@ local mappings = {
         b = {"<cmd>Telescope git_branches<cr>", "Checkout branch"},
         c = {"<cmd>Telescope git_commits<cr>", "Checkout commit"},
         C = {"<cmd>Telescope git_bcommits<cr>", "Checkout commit(for current file)"},
+        l = {"<cmd>LazyGit<cr>", "Lazy Git"},
     },
     l = {
         name = "+LSP",
