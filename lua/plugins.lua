@@ -47,6 +47,7 @@ return require("packer").startup(function(use)
 
     -- Debugging
     use {"mfussenegger/nvim-dap", opt = true}
+    use {'puremourning/vimspector', opt = true}
 
     -- Autocomplete
     use {"hrsh7th/nvim-compe", opt = true}
@@ -107,6 +108,7 @@ return require("packer").startup(function(use)
     require_plugin("telescope.nvim")
     require_plugin('telescope-project.nvim')
     require_plugin("nvim-dap")
+    require_plugin('vimspector')
     require_plugin("nvim-compe")
     require_plugin("vim-vsnip")
     require_plugin("nvim-treesitter")

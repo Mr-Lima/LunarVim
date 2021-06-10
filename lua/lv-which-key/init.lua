@@ -89,12 +89,17 @@ local mappings = {
     },
     D = {
         name = "+Debug",
-        b = {"<cmd>DebugToggleBreakpoint<cr>", "Toggle Breakpoint"},
-        c = {"<cmd>DebugContinue<cr>", "Continue"},
-        i = {"<cmd>DebugStepInto<cr>", "Step Into"},
-        o = {"<cmd>DebugStepOver<cr>", "Step Over"},
+        b = {"<Plug>VimspectorToggleBreakpoint<cr>", "Toggle Breakpoint"},
+        c = {"<Plug>VimspectorContinue<cr>", "Continue"},
+        l = {"<Plug>VimspectorStepInto<cr>", "Step Into"},
+        j = {"<Plug>VimspectorStepOver<cr>", "Step Over"},
+        k = {"<Plug>VimspectorStepOut<cr>", "Step Out"},
+        e = {"<Plug>VimspectorBalloonEval<cr>", "Eval"},
         r = {"<cmd>DebugToggleRepl<cr>", "Toggle Repl"},
-        s = {"<cmd>DebugStart<cr>", "Start"}
+        s = {"<Plug>VimspectorStop<cr>", "Stop"},
+        a = {"<Plug>VimpectorRestart<cr>", "Restart"},
+        u = {"<Plug>VimspectorRunToCursor<cr>", "Run to Cursor"},
+        q = {"<Plug>VimspectorReset<cr>", "Quit"}
     },
     g = {
         name = "+Git",
